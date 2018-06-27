@@ -1,0 +1,184 @@
+<nav class="navbar navbar-light navbar-expand-md navigation-clean-search" style="background-color:#dfeff3;">
+  <div class="container topnav" style="background-color:#dfeff3;">
+    <button data-toggle="collapse" data-target="#navcol-1" class="navbar-toggler"><span class="sr-only">Toggle navigation</span><span
+      class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navcol-1" style="background-color:#dfeff3;">
+      <ul class="nav navbar-nav mx-auto">
+        <li role="presentation" class="nav-item" style="padding-right:40px;padding-left:40px;">
+          <a id="a_home" href="#" class="nav-link text-uppercase " style="color: #8f8f8f">HOME</a>
+        </li>
+        <li role="presentation" class="nav-item" style="padding-right:40px;padding-left:40px;">
+          <a id="a_blog" class="nav-link text-uppercase active " routerLink="/blog" style="color: #8f8f8f">BLOG</a>
+        </li>
+        <li role="presentation" class="nav-item" style="padding-right:40px;padding-left:40px;">
+          <a class="nav-link text-uppercase " style="color: #8f8f8f">CONTACTO</a>
+        </li>
+        <li role="presentation" class="nav-item" style="padding-right:40px;padding-left:40px;"><a href="#"
+                                                                                                  class="nav-link text-uppercase "
+                                                                                                  style="color: #8f8f8f">ABOUT
+          US</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="clean-block clean-form dark" style="height: 15%">
+
+
+  <div class="center">
+    <ul class="list-inline displaynone ">
+      <li class="list-inline-item" style="margin-right:1%;margin-left:1%;" [routerLink]="['/blog', categories[0]]"><a
+        routerLink="/{{categories[0]}}"
+        style="color: inherit;">{{categories[0]}}</a>
+      </li>
+      <li class="list-inline-item" style="margin-right:1%;margin-left:1%;" [routerLink]="['/blog', categories[1]]"><a
+        routerLink="/{{categories[1]}}"
+        style="color: inherit;">{{categories[1]}}</a>
+      </li>
+      <li class="list-inline-item" style="margin-right:1%;margin-left:1%;" [routerLink]="['/blog', categories[2]]"><a
+        routerLink="/{{categories[2]}}"
+        style="color: inherit;">{{categories[2]}}</a>
+      </li>
+      <li class="list-inline-item" style="margin-right:1%;margin-left:1%;" [routerLink]="['/blog', categories[3]]"><a
+        routerLink="/{{categories[3]}}"
+        style="color: inherit;">{{categories[3]}}</a>
+      </li>
+      <li class="list-inline-item" style="margin-right:1%;margin-left:1%;" [[routerLink]="['/blog', categories[4]]"><a
+        routerLink="/{{categories[4]}}"
+        style="color: inherit;">{{categories[4]}}</a>
+      </li>
+      <li class="list-inline-item" style="margin-right:1%;margin-left:1%;" [routerLink]="['/blog', categories[5]]"><a
+        routerLink="/{{categories[5]}}"
+        style="color: inherit;">{{categories[5]}}</a>
+      </li>
+    </ul>
+
+  </div>
+  <div data-ride="carousel" data-interval="false" class="carousel slide sidebar" id="carousel-1"
+       style="height:50px;">
+    <div role="listbox" class="carousel-inner" style="height:50px;">
+      <div class="carousel-item active" style="height:74px;margin-top: 4%;" [routerLink]="['/blog', categories[0]]">
+        <div class="carousel-caption">
+          <p class="p-carousel">{{categories[0]}}<br/></p>
+        </div>
+      </div>
+      <div class="carousel-item" style="height:74px;margin-top: 4%;" [routerLink]="['/blog', categories[1]]">
+        <div class="carousel-caption">
+          <p class="p-carousel">{{categories[1]}}<br/></p>
+        </div>
+      </div>
+      <div class="carousel-item" style="height:74px;margin-top: 4%;" [routerLink]="['/blog', categories[2]]">
+        <div class="carousel-caption">
+          <p class="p-carousel">{{categories[2]}}<br/></p>
+        </div>
+      </div>
+      <div class="carousel-item" style="height:74px;margin-top: 4%;" [routerLink]="['/blog', categories[3]]">
+        <div class="carousel-caption">
+          <p class="p-carousel">{{categories[3]}}<br/></p>
+        </div>
+      </div>
+      <div class="carousel-item" style="height:74px;margin-top: 4%;" [routerLink]="['/blog', categories[4]]">
+        <div class="carousel-caption">
+          <p class="p-carousel">{{categories[4]}}<br/></p>
+        </div>
+      </div>
+      <div class="carousel-item" style="height:74px;margin-top: 4%;" [routerLink]="['/blog', categories[5]]">
+        <div class="carousel-caption">
+          <p class="p-carousel">{{categories[5]}}<br/></p>
+        </div>
+      </div>
+    </div>
+
+
+    <div><a href="#carousel-1" role="button" data-slide="prev" class="carousel-control-prev"
+            style="background-color: black"><span aria-hidden="true"
+                                                  class="carousel-control-prev-icon"
+                                                  style="background-color:#000000;"></span><span
+      class="sr-only" style="background-color:#000000;">Previous</span></a>
+      <a
+        href="#carousel-1" role="button" data-slide="next" class="carousel-control-next"
+        style="background-color: black"><span aria-hidden="true"
+                                              class="carousel-control-next-icon"
+                                              style="background-color:#000000;"></span><span
+        class="sr-only" style="color:rgb(255,255,255);">Next</span></a>
+    </div>
+  </div>
+
+</section>
+
+<!--<mat-card style="margin: 6px">Simple card</mat-card>-->
+
+<section class="about-us">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <mat-nav-list>
+          <mat-list-item *ngFor="let article of articleListLeft" style="min-height: 24%;height: 44%;">
+
+              <mat-card style="margin: 2%;" (click)="redirect(articleList[0].id)">
+                <img mat-card-image src="../assets/img/dog_.jpg" class="fadeshow"/>
+                <div style="background-color:rgba(115,8,8,0);padding-top:0;position:relative;">
+                  <div class="text-center"
+                       style="border-color:  transparent;position:absolute;bottom:0;margin-bottom: 6%;width:96%">
+                    <div style="background-color:rgba(70,70,71,0.5);height:90%;">
+                      <h4 class="text-left card-title"
+                          style="color:rgb(255,255,255);font-size:22px;padding-left: 2%;padding-top: 1%">
+                        {{article.title}}<br/></h4>
+                      <h2 class="displaynone"
+                          style="margin-top:-18%;padding: 4px;font-style:normal;color:#000000;min-width:60%;position:absolute;
+                        margin-left:2%;font-size:19px;" [style.background-color]="article.color">
+                        {{article.category}}</h2>
+                    </div>
+                  </div>
+
+
+                </div>
+                <div>
+
+                  <div>
+                    <h4>{{article.author}}</h4>
+                    <p style="font-size: 80%">{{article.description}}
+                    </p>
+                  </div>
+                </div>
+              </mat-card>
+
+          </mat-list-item>
+        </mat-nav-list>
+      </div>
+      <div class="col-md-6">
+        <mat-nav-list>
+          <mat-list-item *ngFor="let article of articleListRight" style="min-height: 24%;height: 44%;">
+            <mat-card style="margin: 2%;">
+              <img mat-card-image src="../assets/img/dog_.jpg" class="fadeshow"/>
+              <div style="background-color:rgba(115,8,8,0);padding-top:0;position:relative;">
+                <div class="text-center"
+                     style="border-color:  transparent;position:absolute;bottom:0;margin-bottom: 6%;width:96%">
+                  <div style="background-color:rgba(70,70,71,0.5);height:90%;">
+                    <h4 class="text-left card-title"
+                        style="color:rgb(255,255,255);font-size:22px;padding-left: 2%;padding-top: 1%">{{article.title}}<br/>
+                    </h4>
+                    <h2 class="displaynone"
+                        style="margin-top:-18%;padding: 4px;font-style:normal;color:#000000;min-width:60%;position:absolute;
+                        margin-left:2%;font-size:19px;" [style.background-color]="article.color">
+                      {{article.category}}</h2>
+                  </div>
+                </div>
+
+
+              </div>
+              <div>
+
+                <div>
+                  <h4>{{article.author}}</h4>
+                  <p style="font-size: 80%">{{article.description}}
+                  </p>
+                </div>
+              </div>
+            </mat-card>
+          </mat-list-item>
+        </mat-nav-list>
+      </div>
+    </div>
+  </div>
+</section>

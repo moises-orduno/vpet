@@ -1,0 +1,43 @@
+
+.here{
+  position:absolute;
+}
+
+@media only screen and (max-width: 1026px) {
+  .fadeshow {
+    display: none;
+  }
+  .here{
+    position: relative;
+  }
+}
+.center {
+  margin: auto;
+  /*width: 300px;*/
+  max-width: 460px;
+  min-width: 300px;
+  padding: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-bottom: 3px solid transparent;
+}
+
+.topnav a:hover {
+  border-bottom: 10px solid #4f676d;
+}
+.topnav a.active {
+  border-bottom: 10px solid #4f676d;
+}

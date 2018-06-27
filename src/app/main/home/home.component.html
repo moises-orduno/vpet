@@ -1,0 +1,107 @@
+<nav class="navbar navbar-light navbar-expand-md navigation-clean-search" style="background-color:#dfeff3;">
+  <div class="container topnav" style="background-color:#dfeff3;">
+    <button data-toggle="collapse" data-target="#navcol-1" class="navbar-toggler"><span class="sr-only">Toggle navigation</span><span
+      class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navcol-1" style="background-color:#dfeff3;">
+      <ul class="nav navbar-nav mx-auto">
+        <li role="presentation" class="nav-item" style="padding-right:40px;padding-left:40px;">
+          <a id="a_home" href="#" class="nav-link text-uppercase active" style="color: #8f8f8f">HOME</a>
+        </li>
+        <li role="presentation" class="nav-item" style="padding-right:40px;padding-left:40px;">
+          <a id="a_blog" class="nav-link text-uppercase " routerLink="/blog" style="color: #8f8f8f" >BLOG</a>
+        </li>
+        <li role="presentation" class="nav-item" style="padding-right:40px;padding-left:40px;">
+          <a class="nav-link text-uppercase " style="color: #8f8f8f">CONTACTO</a>
+        </li>
+        <li role="presentation" class="nav-item" style="padding-right:40px;padding-left:40px;"><a href="#"
+                                                                                                  class="nav-link text-uppercase "
+                                                                                                  style="color: #8f8f8f">ABOUT
+          US</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <section class="clean-block clean-hero"
+           style="color:rgba(9,162,255,0);min-height:348px;max-height:539px;margin-bottom:0px;padding-bottom:80px;background-position:center;background-image:url(&quot;assets/img/dog_n_cat.jpeg&quot;);">
+    <div class="text" style="min-height:0px;max-height:0px;padding-top:0px;margin-top:3px;">
+      <h2 style="margin-top:100px;background-color:rgba(62,54,54,0.64);font-style:normal;">Todo para cuidar de tu mejor
+        amigo</h2>
+    </div>
+  </section>
+  <section class="clean-block about-us"
+           style="height:30px;max-height:30px;margin:0px;margin-top:10px;padding-bottom:80px;margin-bottom:10px;">
+    <div class="container">
+      <h4 class="text-center" style="font-size:22px;color:rgb(70,70,71);padding-top:22px;">Últimas noticias</h4>
+    </div>
+  </section>
+  <div style="margin-right:3%;margin-left:3%;margin-bottom:1%;" (click)="redirect(articleList[0].id)">
+    <div style="position:relative;" >
+      <div class="container" style="background-color:rgba(115,8,8,0);padding-top:0px;">
+        <div class="card clean-card text-center here"
+             style="margin-top:0;bottom:8px;margin-right:16px;margin-left:6px;">
+          <div class="card-body info" style="background-color:rgb(70,70,71);background-position:top;">
+            <h4 class="text-left card-title" style="color:rgb(255,255,255);font-size:22px;">{{articleList[0].title}}<br/>
+            </h4>
+            <p class="text-left card-text" style="color:rgb(255,255,255);font-size:22px;">El manual básico para tener
+              una mascota si no sabes nada<br/>sobre ser padre.<br/></p>
+          </div>
+        </div>
+        <img src="../assets/img/cat_1234.jpg" class="fadeshow" style="width:100%;height:100%;"/></div>
+    </div>
+  </div>
+  <section class="about-us"
+           style="margin:0;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+
+          <div style="position:relative;">
+            <div style="background-color:rgba(115,8,8,0);padding-top:0px;">
+              <div class="card clean-card text-center here"
+                   style="margin-top:0px;bottom:8px;margin-right:16px;margin-left:6px;">
+                <div class="card-body info" style="background-color:rgb(70,70,71);background-position:top;">
+                  <h4 class="text-left card-title" style="color:rgb(255,255,255);font-size:22px;">MASCOTAS PARA
+                    DUMMIES<br/></h4>
+                </div>
+              </div>
+              <img src="../assets/img/dog_.jpg" class="fadeshow" style="width:100%;height:100%;"/></div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div style="position:relative;">
+            <div style="background-color:rgba(115,8,8,0);padding-top:0px;">
+              <div class="card clean-card text-center here"
+                   style="margin-top:0px;bottom:8px;margin-right:16px;margin-left:6px;">
+                <div class="card-body info" style="background-color:rgb(70,70,71);background-position:top;">
+                  <h4 class="text-left card-title" style="color:rgb(255,255,255);font-size:22px;">MASCOTAS PARA
+                    DUMMIES<br/></h4>
+                </div>
+              </div>
+              <img src="../assets/img/dog_.jpg" class="fadeshow" style="width:100%;height:100%;"/></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="clean-block about-us"
+           style="height:30px;max-height:30px;margin:0px;margin-top:10px;padding-bottom:60px;margin-bottom:10px;">
+    <div class="container">
+      <h4 class="text-center" style="font-size:22px;color:rgb(70,70,71);padding-top:22px;">Quiero saber más...</h4>
+    </div>
+  </section>
+  <div class="text center" style="padding-top:0px;margin-top:3px;">
+    <div class="input-group"><input class="form-control" type="text" style="font-style:italic;background-color:rgb(230,230,230);"/>
+      <div class="input-group-append">
+        <button class="btn btn-primary btn-lg" type="button"
+                style="background-image:url(&quot;Recurso 1@300x.png&quot;);background-color:rgb(190,154,195);color: black;"><b>enviar</b>
+        </button>
+      </div>
+    </div>
+  </div>
+  <section class="clean-block about-us"
+           style="height:30px;max-height:30px;margin:0px;padding-bottom:60px;margin-bottom:10px;">
+    <div class="container">
+      <p class="text-center" style="font-size:12px;color:rgb(70,70,71);padding-top:22px;">Escribe tu e-mail para recibir más artículos, promociones y noticias para tu mascota!</p>
+    </div>
+  </section>
+

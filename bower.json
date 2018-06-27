@@ -1,0 +1,16 @@
+{
+  "name": "default",
+  "description": "default",
+  "main": "default",
+  "authors": [
+    "warrior"
+  ],
+  "license": "default",
+  "keywords": [
+    "default"
+  ],
+  "homepage": "default",
+  "dependencies": {
+    "v-pet-controller": "davidhdzhdz/v-pet-controller"
+  }
+}
