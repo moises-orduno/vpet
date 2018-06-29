@@ -13,6 +13,7 @@ export class BlogComponent implements OnInit {
   categories: string[] = ['POPULARES', 'CONSEJOS', 'NUTRICIÓN', 'SALUD', 'ENTRETENIMIENTO', 'ESTILO DE VIDA'];
 
   articleList: Article[];
+  currentCategory = '';
 
   articleListRight;
 
@@ -29,6 +30,15 @@ export class BlogComponent implements OnInit {
 
   }
 
+  getRoute(category: string) {
+
+    if (this.currentCategory === '') {
+      return '../' + category;
+    } else {
+      return '../blog/' + category;
+    }
+  }
+
   onCategorySelected(category: string) {
     console.log('onCategorySelected' + category);
 
@@ -36,6 +46,7 @@ export class BlogComponent implements OnInit {
       this.articleService.getByCategory(category).subscribe(articles => console.log(articles));
     } else {
       this.articleService.get().subscribe(articles => this.setArticles(articles));
+      this.currentCategory = category;
     }
 
   }

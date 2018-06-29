@@ -7,8 +7,14 @@
   .displayinitial {
     display: initial;
   }
+  .showPadding {
+    padding: 16px;
+  }
 
+}
 
+.showPadding{
+  padding: 0;
 }
 
 .center {
@@ -25,7 +31,7 @@
   }
 }
 
-.here{
+.positionAbsolute{
   position:absolute;
 }
 
@@ -44,6 +50,8 @@
   overflow: hidden;
   background-color: #f1f1f1;
 }
+
+
 
 .topnav a {
   float: left;

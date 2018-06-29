@@ -1,4 +1,8 @@
 
+.showPadding{
+  padding: 0;
+}
+
 @media only screen and (max-width: 1026px) {
   .displaynone {
     display: none;
@@ -7,7 +11,9 @@
   .displayinitial {
     display: initial;
   }
-
+  .showPadding {
+    padding: 16px;
+  }
 
 }
 
@@ -25,7 +31,7 @@
   }
 }
 
-.here{
+.positionAbsolute{
   position:absolute;
 }
 

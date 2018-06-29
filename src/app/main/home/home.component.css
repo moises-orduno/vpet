@@ -1,14 +1,21 @@
 
-.here{
+.positionAbsolute{
   position:absolute;
+}
+
+.showPadding{
+  padding: 0;
 }
 
 @media only screen and (max-width: 1026px) {
   .fadeshow {
     display: none;
   }
-  .here{
+  .positionAbsolute{
     position: relative;
+  }
+  .showPadding {
+    padding: 16px;
   }
 }
 .center {
