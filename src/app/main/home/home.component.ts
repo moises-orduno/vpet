@@ -12,7 +12,65 @@ import {Router} from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
-  public articleList: Article[];
+  public articleList: Article[] = [{
+    id: '1',
+    type: 'article',
+    category: 'salud',
+    color: '#d1e8eb',
+    content: '<p>here must be something</p>',
+    tags: [
+      'dummies',
+      'care',
+      'basic'
+    ],
+    timestamp: '2018-06-11T20:10:00.000Z',
+    title: 'El hospital de las mascotas',
+    description: 'Atiende de lunes a lunes de manera gratuita.',
+    author: 'Eduardo Macchiavelli',
+    authorDescription: 'Estamos',    blog: 'Padres Primerizos',
+
+    cover: 'who let you',
+
+  }, {
+    id: '2',
+    type: 'article',
+    category: 'salud',
+    color: '#d1e8eb',
+    content: '<p>here must be something</p>',
+    tags: [
+      'dummies',
+      'care',
+      'basic'
+    ],
+    timestamp: '2018-06-11T20:10:00.000Z',
+    title: 'Diabetes en gatos',
+    description: 'Atiende de lunes a lunes de manera gratuita.',
+    author: 'Eduardo Macchiavelli',
+    authorDescription: 'Estamos',
+    blog: 'Padres Primerizos',
+
+    cover: 'who let you',
+
+  }, {
+    id: '3',
+    type: 'article',
+    category: 'salud',
+    color: '#d1e8eb',
+    content: '<p>here must be something</p>',
+    tags: [
+      'dummies',
+      'care',
+      'basic'
+    ],
+    timestamp: '2018-06-11T20:10:00.000Z',
+    title: 'Jornada de medicina veterinaria en Ciudad Universitaria',
+    description: 'Atiende de lunes a lunes de manera gratuita.',
+    author: 'Eduardo Macchiavelli',
+    authorDescription: 'Estamos',    blog: 'Padres Primerizos',
+
+    cover: 'who let you',
+
+  }];
 
   constructor(private articleService: ArticleService, private router: Router) {
 
@@ -23,7 +81,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
 
     // firebase.database():ref(‘nombreTabla’ + id).set({nombreCampo1: valorCampo1,...});
-    this.articleService.getByAuthor('v-pet').subscribe(articles => this.setArticle(articles));
+    // this.articleService.getByAuthor('v-pet').subscribe(articles => this.setArticle(articles));
   }
 
   setArticle(articleList: Article[]) {

@@ -1,4 +1,4 @@
-export interface Article {
+export class Article {
   id: string;
   type: string;
   category: string;
@@ -9,5 +9,7 @@ export interface Article {
   title: string;
   description: string;
   author: string;
+  authorDescription: string;
+  blog: string;
   cover: string;
 }

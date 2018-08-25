@@ -109,7 +109,7 @@
 
 <section class="clean-block features" style="background-color:#FFF;">
   <div class="row" style="margin-right:3%;margin-left:15px;">
-    <div class="col-md-7 offset-1" style="background-color:rgba(223,239,243,0);margin-bottom:14px;">
+    <div class="col-md-7 offset-md-1" style="background-color:rgba(223,239,243,0);margin-bottom:14px;">
       <div style="background-color:rgba(115,8,8,0);padding-top:0;position:relative;">
         <div class="clean-card text-center "
              style="border-color:  transparent;position:absolute;bottom:0;margin:6px;width:96%">
@@ -118,19 +118,19 @@
                         margin-left:2%;font-size:19px;" [style.background-color]="article.color">
             {{article.category}}</h2>
           <div class="card-body info" style="background-color:rgba(70,70,71,0.5);">
-            <h4 class="text-left card-title" style="color:rgb(255,255,255);font-size:22px;">{{article.title}}<br/></h4>
+            <h4 class="text-left card-title" style="color:rgb(255,255,255);font-size:22px;">{{article.blog}}<br/></h4>
 
           </div>
         </div>
         <img src="../assets/img/dog_.jpg" class="fadeshow" style="width:100%;height:100%;"/>
       </div>
       <div style="margin-top:3%;"><span>{{article.author}}</span></div>
-      <div><span>Veterniario especialista en gatos.</span></div>
+      <div><span>{{article.authorDescription}}</span></div>
 
 
 
       <div>
-        <div [innerHTML]="article.content"></div>
+        <div [innerHTML]="article.content|safeHtml"></div>
 
       </div>
     </div>
@@ -152,7 +152,7 @@
                     {{article.category}}</h2>
                 </div>
               </div>
-              <img src="../assets/img/dog_.jpg" class="fadeshow" style="width:100%;height:100%;"/>
+              <img src="{{article.cover}}" class="fadeshow" style="width:100%;height:100%;"/>
             </div>
 
 

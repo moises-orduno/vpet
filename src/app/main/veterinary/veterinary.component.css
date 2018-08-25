@@ -1,11 +1,5 @@
-
-.showPadding{
-  padding: 0;
-}
-
-.imgWidth{
-  width: 5%;
-  margin-left: 8%;
+agm-map {
+  height: 500px;
 }
 
 @media only screen and (max-width: 1026px) {
@@ -20,6 +14,10 @@
     padding: 16px;
   }
 
+}
+
+.showPadding{
+  padding: 0;
 }
 
 .center {
@@ -55,6 +53,8 @@
   overflow: hidden;
   background-color: #f1f1f1;
 }
+
+
 
 .topnav a {
   float: left;

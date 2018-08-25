@@ -1,0 +1,276 @@
+<nav class="navbar navbar-light navbar-expand-md navigation-clean-search showPadding" style="background-color:#dfeff3;">
+  <div class="container topnav" style="background-color:#dfeff3;">
+    <button data-toggle="collapse" data-target="#navcol-1" class="navbar-toggler"><span class="sr-only">Toggle navigation</span><span
+      class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navcol-1" style="background-color:#dfeff3;">
+      <ul class="nav navbar-nav mx-auto">
+        <li role="presentation" class="nav-item" style="padding-right:40px;padding-left:40px;">
+          <a id="a_home" href="#" class="nav-link text-uppercase active" style="color: #8f8f8f">HOME</a>
+        </li>
+        <li role="presentation" class="nav-item" style="padding-right:40px;padding-left:40px;">
+          <a id="a_blog" class="nav-link text-uppercase " routerLink="/blog" style="color: #8f8f8f" >BLOG</a>
+        </li>
+        <li role="presentation" class="nav-item" style="padding-right:40px;padding-left:40px;">
+          <a id="a_veterinaries" class="nav-link text-uppercase " routerLink="/veterinary" style="color: #8f8f8f" >VETERINARIOS</a>
+        </li>
+        <li role="presentation" class="nav-item" style="padding-right:40px;padding-left:40px;">
+          <a class="nav-link text-uppercase " style="color: #8f8f8f">CONTACTO</a>
+        </li>
+        <li role="presentation" class="nav-item" style="padding-right:40px;padding-left:40px;"><a href="#"
+                                                                                                  class="nav-link text-uppercase "
+                                                                                                  style="color: #8f8f8f">ABOUT
+          US</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<main class="page" style="background-color:#dfeff3;">
+  <section class="clean-block clean-hero" style="color:rgba(9,162,255,0);min-height:200px;max-height:300px;margin-bottom:0px;padding-bottom:15px;background-position:center;background-image:url(&quot;assets/img/vet.jpg&quot;);">
+    <div class="text" style="height:168px;margin:0px;min-height:0px;max-height:-1px;padding-top:0px;width:602px;margin-top:3px;">
+      <div class="input-group"><input class="form-control" type="text" placeholder="Escribe el nombre de la delegación, veterinario o clínica" style="font-style:italic;">
+        <div class="input-group-append"><button class="btn btn-primary btn-lg" type="button" style="background-image:url(&quot;assets/img/Recurso 1@300x.png&quot;);background-color:rgb(70,93,98);" onclick="searchVeterinaries()">&nbsp; Buscar &nbsp;</button></div>
+      </div>
+      <h2 style="margin-top:10px;background-color:rgba(152,204,154,0.61);font-style:normal;color:#484849;">Ubica, conoce y contacta a<br>veterinarios de calidad</h2>
+    </div>
+  </section>
+  <div id="vet_ask" style="display: none;">
+    <section class="clean-block features" style="height:270px;">
+      <div style="background-color:rgba(152,204,154,0);border-top-right-radius:25px;border-top-left-radius:25px;">
+        <div style="border-radius:50%;background-color:#ffffff;width:130px;height:130px;margin:auto;margin-top:20px;margin-bottom:-119px;"><img src="assets/img/Recurso 1@300x.png" style="width:80px;margin-top:26px;margin-right:0px;margin-left:19%;"></div>
+        <p class="text-center" style="color:#333333;font-size:28px;margin-top:143px;">¿QUÉ TAN GRAVE<br>ESTÁ MI MASCOTA?</p>
+      </div>
+    </section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="card clean-card text-center" style="background-color:rgba(255,255,255,0);height:314px;color:rgba(33,37,41,0);">
+            <div class="card-body info" style="background-color:#98cc9a;height:100px;border-radius:25px;margin-top:5px;">
+              <p class="card-text" style="color:#ffffff;font-size:14px;margin-top:34px;">Descubre qué tan tóxico es lo<br>que se comió.</p>
+              <p class="card-text" style="color:#ffffff;font-size:14px;">Cerciórate de que su<br>comportamiento sea normal y<br>no el inicio de algo más grave.</p><button class="btn btn-primary" type="button" style="border:2px solid white;border-radius:25px;background-color:#ffffff;color:#212529;">Obtener una prevaloración</button>
+              <div
+                style="background-color:rgba(152,204,154,0);border-top-right-radius:25px;border-top-left-radius:25px;margin:-29px;margin-top:-191px;"><img src="assets/img/Recurso 4@300x.png" style="width:98px;margin-top:70px;margin-left:-96%;margin-right:0;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card clean-card text-center" style="background-color:rgba(255,255,255,0);height:314px;color:rgba(33,37,41,0);">
+            <div class="card-body info" style="background-color:#98cc9a;height:100px;border-radius:25px;margin-top:5px;">
+              <p class="card-text" style="color:#ffffff;font-size:14px;margin-top:63px;">Haz preguntas a<br>veterinarios certificados y<br>recibe respuesta rápida.</p><button class="btn btn-primary" type="button" style="border:2px solid white;border-radius:25px;background-color:#ffffff;color:#212529;">Preguntar a veterinarios</button>
+              <div
+                style="background-color:rgba(152,204,154,0);border-top-right-radius:25px;border-top-left-radius:25px;margin:-30px;margin-top:-213px;"><img src="assets/img/Recurso 5@300x.png" style="width:136px;margin-top:21px;margin-left:-83%;margin-right:0;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="vet_map" >
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div>
+            <ul class="nav nav-tabs">
+              <li class="nav-item"><a class="nav-link active" role="tab" data-toggle="tab" href="#tab-1">TODOS</a></li>
+              <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-2">24/7</a></li>
+              <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-3">CONSULTAS A DOMICILIO</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane active" role="tabpanel" id="tab-1">
+                <ul class="list-group">
+                  <li class="list-group-item" style="background-color:#d1e8ee;">
+                    <div class="row" style="background-color:#d1e8ee;">
+                      <div class="col-3 offset-1">
+                        <div style="height:116px;"><img src="assets/img/medicos-veterinarios-mexico-df.png" style="width:111px;margin-top:6%;"></div>
+                      </div>
+                      <div class="col-8">
+                        <div style="height:116px;">
+                          <ul class="list-unstyled">
+                            <li style="font-size:16px;color:#465d62;">Sahra Guzmán Rodríguez</li>
+                            <li style="font-size:14px">Hospital Veterinario de Especialidades en Pequeñas Especies</li>
+                            <li style="font-size:14px;color:rgb(169,178,202);">Investigación Científica 3000,Cdad. Universitaria</li>
+                            <li style="font-size:14px;color:#a9b2ca;">4 lo recomiendan</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item" style="background-color:rgb(247,251,252);">
+                    <div class="row" style="background-color:#f7fbfc;">
+                      <div class="col-3 offset-1">
+                        <div style="height:116px;"><img src="assets/img/vet1.png" style="width:111px;margin-top:6%;"></div>
+                      </div>
+                      <div class="col-8">
+                        <div style="height:116px;">
+                          <ul class="list-unstyled">
+                            <li style="font-size:16px;color:#465d62;">Benjamín González Urrutia</li>
+                            <li style="font-size:14px">Clínica Veterinaria Del Sur</li>
+                            <li style="font-size:14px;color:rgb(169,178,202);">Luis G. de León 12, Copilco el Alto</li>
+                            <li style="font-size:14px;color:#a9b2ca;">1 lo recomienda</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item" style="background-color:#d1e8ee;" onclick="setVeterinary()">
+                    <div class="row" style="background-color:#d1e8ee;">
+                      <div class="col-3 offset-1">
+                        <div style="height:116px;"><img src="assets/img/veterinario_1.png" style="width:111px;margin-top:6%;"></div>
+                      </div>
+                      <div class="col-8">
+                        <div style="height:116px;">
+                          <ul class="list-unstyled">
+                            <li style="font-size:16px;color:#465d62;">Leonardo Meza Cuevas</li>
+                            <li style="font-size:14px">Veterinaria Zoo</li>
+                            <li style="font-size:14px;color:rgb(169,178,202);">Ahuanusco 85, Pedregal de Santo Domingo</li>
+                            <li style="font-size:14px;color:#a9b2ca;">No ha sido calificado</li>
+                          </ul>
+
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-pane" role="tabpanel" id="tab-2">
+                <ul class="list-group">
+                  <li class="list-group-item" style="background-color:rgb(247,251,252);">
+                    <div class="row" style="background-color:#f7fbfc;">
+                      <div class="col-3 offset-1">
+                        <div style="height:116px;"><img src="assets/img/vet1.png" style="width:111px;margin-top:6%;"></div>
+                      </div>
+                      <div class="col-8">
+                        <div style="height:116px;">
+                          <ul class="list-unstyled">
+                            <li style="font-size:16px;color:#465d62;">Benjamín González Urrutia</li>
+                            <li style="font-size:14px">Clínica Veterinaria Del Sur</li>
+                            <li style="font-size:14px;color:rgb(169,178,202);">Luis G. de León 12, Copilco el Alto</li>
+                            <li style="font-size:14px;color:#a9b2ca;">1 lo recomienda</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="list-group-item" style="background-color:#d1e8ee;" onclick="setVeterinary()">
+                    <div class="row" style="background-color:#d1e8ee;">
+                      <div class="col-3 offset-1">
+                        <div style="height:116px;"><img src="assets/img/veterinario_1.png" style="width:111px;margin-top:6%;"></div>
+                      </div>
+                      <div class="col-8">
+                        <div style="height:116px;">
+                          <ul class="list-unstyled">
+                            <li style="font-size:16px;color:#465d62;">Leonardo Meza Cuevas</li>
+                            <li style="font-size:14px">Veterinaria Zoo</li>
+                            <li style="font-size:14px;color:rgb(169,178,202);">Ahuanusco 85, Pedregal de Santo Domingo</li>
+                            <li style="font-size:14px;color:#a9b2ca;">No ha sido calificado</li>
+                          </ul>
+
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-pane" role="tabpanel" id="tab-3">
+                <ul class="list-group">
+                  <li class="list-group-item" style="background-color:#d1e8ee;">
+                    <div class="row" style="background-color:#d1e8ee;">
+                      <div class="col-3 offset-1">
+                        <div style="height:116px;"><img src="assets/img/medicos-veterinarios-mexico-df.png" style="width:111px;margin-top:6%;"></div>
+                      </div>
+                      <div class="col-8">
+                        <div style="height:116px;">
+                          <ul class="list-unstyled">
+                            <li style="font-size:16px;color:#465d62;">Sahra Guzmán Rodríguez</li>
+                            <li style="font-size:14px">Hospital Veterinario de Especialidades en Pequeñas Especies</li>
+                            <li style="font-size:14px;color:rgb(169,178,202);">Investigación Científica 3000,Cdad. Universitaria</li>
+                            <li style="font-size:14px;color:#a9b2ca;">4 lo recomiendan</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <agm-map [latitude]="lat" [longitude]="lng" [zoom]="12">
+            <agm-marker [latitude]="19.331312" [longitude]="-99.177168"></agm-marker>
+            <agm-marker [latitude]="19.332188" [longitude]="-99.174550"></agm-marker>
+            <agm-marker [latitude]="19.324104" [longitude]="-99.164449"></agm-marker>
+          </agm-map>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="vet_info" style="display: none;">
+    <section class="clean-block features" style="background-color:#dfeff3;">
+      <div class="row" style="margin-right:3%;margin-left:15px;">
+        <div class="col" style="background-color:rgba(223,239,243,0);margin-bottom:14px;">
+          <div style="height:500px;background-color:#f7fbfc;margin-bottom:116px;">
+            <div style="margin-left:0px;margin-bottom:0px;margin-top:-56px;"><img src="assets/img/vet1.png" style="width:301px;margin-top:5%;margin-left:20%;"></div>
+            <ul class="list-unstyled" style="margin-left:6%;">
+              <li style="font-size:24px;color:#465d62;">Benjamín González Urrutia</li>
+              <li style="font-size:24px;">Clínica Patitas</li>
+              <li>Consulta, Cirugía, Comportamiento,<br>Venta de medicinas, alimento y<br>accesorios. Estética</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col">
+          <div><button class="btn btn-primary" type="button" style="border:2px solid #465d62;border-radius:25px;background-color:#465d62;color:#f7fbfc;margin-top:8%;margin-left:8%;">Contactar</button></div>
+          <ul class="list-unstyled" style="margin-top:6%;margin-left:0px;">
+            <li style="font-size:18px;">Atiende</li>
+            <li>Perros y gatos</li>
+            <li style="font-size:18px;margin-top:6%;">Horario</li>
+            <li>Lunes a Viernes de 9.00 a 18:30</li>
+            <li>Sabados de 9.00 a 14:30</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="clean-block features" style="height:550px;background-color:#ffffff;margin:0px;padding-top:40px;">
+      <div style="text-align:center;margin-top:0px;"><span class="text-uppercase" style="align=&quot;center&quot;">GUANABANA 234, 02820, MEXICO CITY, DISTRITO FEDERAL (MÉXICO)</span></div>
+      <div style="text-align:center;margin-top:16px;margin-right:10%;margin-left:10%;"><iframe allowfullscreen="" frameborder="0" width="100%" height="400" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC2QNepimxTuiXoihBnypDYNNWc-5eHJwc&amp;q=ciudad+de+mexico&amp;zoom=11"></iframe></div>
+    </section>
+    <section class="clean-block features" style="background-color:#f7fbfc;margin:0px;padding-top:20px;">
+      <div style="text-align:center;margin-top:0px;margin-left:10%;margin-right:10%;">
+        <p class="text-left" style="font-size:24px;color:#465d62;">Servicios</p>
+      </div>
+      <div style="text-align:center;margin-top:0px;margin-left:10%;margin-right:10%;">
+        <p class="text-left" style="font-size:20px;margin-top:-17px;">Consulta, cirugía, higiene dental, etología (corrección de malas<br>conductas como agresividad, destructividad y más), asesoría en<br>nutrición, Kinder Kan (educación al dueño del paciente).<br>cremación, estética, venta de alimento
+          y accesorios</p>
+      </div>
+      <div style="text-align:center;margin-top:0px;margin-left:10%;margin-right:10%;">
+        <p class="text-left" style="font-size:24px;color:#465d62;">Tarifas</p>
+      </div>
+      <div style="text-align:center;margin-top:0px;margin-left:10%;margin-right:10%;">
+        <p class="text-left" style="font-size:20px;margin-top:-17px;">Consulta 350.00, otros precios dependen de los servicios</p>
+      </div>
+    </section>
+    <section class="clean-block features" style="height:550px;background-color:#ffffff;margin:0px;padding-top:20px;">
+      <div style="text-align:center;margin-top:0px;margin-left:10%;margin-right:10%;">
+        <p class="text-left" style="font-size:24px;color:#465d62;">Opiniones</p>
+      </div>
+      <div style="text-align:center;margin-top:0px;margin-left:10%;margin-right:10%;">
+        <ul class="list-group">
+          <li class="list-group-item">
+            <div style="text-align:left;margin-top:0px;margin-left:10%;margin-right:10%;"><span style="font-weight:bold;">Diana Perez</span></div>
+            <div style="text-align:left;margin-top:1%;margin-left:10%;margin-right:10%;"><span style="font-weight:bold;">Motivo de la visita:</span><span style="margin-left:7px;">Vacunación y revisión</span></div>
+            <div style="text-align:left;margin-top:0px;margin-left:10%;margin-right:10%;"><span style="font-weight:bold;">Lo mejor:</span><span style="margin-left:7px;">Mas que gustarme, es la experiencia, eficiencia y los buenos resultados</span></div>
+            <div style="text-align:left;margin-top:0px;margin-left:10%;margin-right:10%;"><span style="font-weight:bold;">Podría mejorar:</span><span style="margin-left:7px;">Creo que la mejora es mas más estructural que de calidad. desearía que tuviera una recepción mas grande, con una tienda igual Pero son banalidades, el servicio es excelente y el doctor es único.</span></div>
+            <div
+              style="text-align:left;margin-top:0px;margin-left:10%;margin-right:10%;"><span style="margin-left:7px;font-size:10px;">hace cerca de 1 año</span></div>
+          </li>
+          <li class="list-group-item">
+            <div style="text-align:left;margin-top:0px;margin-left:10%;margin-right:10%;"><span style="font-weight:bold;">Marisol Gonzalez</span></div>
+            <div style="text-align:left;margin-top:1%;margin-left:10%;margin-right:10%;"><span style="font-weight:bold;">Motivo de la visita:</span><span style="margin-left:7px;">Revisión</span></div>
+            <div style="text-align:left;margin-top:0px;margin-left:10%;margin-right:10%;"><span style="font-weight:bold;">Lo mejor:</span><span style="margin-left:7px;">Mas que gustarme, es la experiencia, eficiencia y los buenos resultados</span></div>
+            <div style="text-align:left;margin-top:0px;margin-left:10%;margin-right:10%;"><span style="font-weight:bold;">Podría mejorar:</span><span style="margin-left:7px;">Necesitan lugar de estacionamiento.</span></div>
+            <div style="text-align:left;margin-top:0px;margin-left:10%;margin-right:10%;"><span style="margin-left:7px;font-size:10px;">hace cerca de 1 año</span></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
+</main>

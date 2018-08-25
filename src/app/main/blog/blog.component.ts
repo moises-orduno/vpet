@@ -45,7 +45,9 @@ export class BlogComponent implements OnInit {
     if (category !== undefined) {
       this.articleService.getByCategory(category).subscribe(articles => console.log(articles));
     } else {
-      this.articleService.get().subscribe(articles => this.setArticles(articles));
+      // this.articleService.get().subscribe(articles => this.setArticles(articles));
+      this.setArticles(this.articleService.get());
+
       this.currentCategory = category;
     }
 
